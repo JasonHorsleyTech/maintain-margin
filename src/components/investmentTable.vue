@@ -176,7 +176,7 @@ export default {
 
             return this.indexForPeriod.map(currentPeriod => {
                 // This is your paycheck per month, assuming you stay in the same income bracket relative to inflation
-                let monthlyCheck = (this.getCurrentYearSalary(currentPeriod.date.getFullYear()) / 12) * 0.75
+                let monthlyCheck = (this.getCurrentYearSalary(currentPeriod.date.getFullYear()) / 12)
 
                 // This is how much you can save from each monthly check
                 let monthlySavings = monthlyCheck * this.salaryPercent
