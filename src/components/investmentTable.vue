@@ -179,7 +179,7 @@ export default {
                 let monthlyCheck = (this.getCurrentYearSalary(currentPeriod.date.getFullYear()) / 12) * 0.75
 
                 // This is how much you can save from each monthly check
-                let monthlySavings = monthlyCheck * (this.salaryPercent / 100)
+                let monthlySavings = monthlyCheck * this.salaryPercent
 
                 // Previous stock values for last month's period
                 let previousPeriod = this.selectedIndex.find(p => p.i == currentPeriod.i - 1) || currentPeriod
